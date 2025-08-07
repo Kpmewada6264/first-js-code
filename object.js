@@ -47,3 +47,66 @@ console.log(jsuser.greetingtwo()); // Will print "Hello, jsuser krishna"
 
 console.log(jsuser.greeting);//[Function (anonymous)]
 
+
+const tinderuser=new Object();
+
+console.log(tinderuser); // Will print an empty object {}
+
+tinderuser.id="122433"
+tinderuser.name="krishna";
+tinderuser.isLoggedIn=true;
+
+console.log(tinderuser); // Will print { id: '122433', name: 'krishna', isLoggedIn: true }
+
+
+const regularuser={
+    email:"krishna@gmail.com",
+    fullname:{
+        userfullname:{
+        username:"rahul",
+        lastname:"mewada"
+        }
+    }
+}
+
+console.log("--- regularuser ---");
+console.log(regularuser.fullname.userfullname)
+
+const object1={
+    key1:"value1",
+    key2:"value2",}
+const object2={
+    key3:"value3",
+    key4:"value4",}
+
+const object3={object1,object2}
+console.log(object3); // Will print { object1: { key1: 'value1', key2: 'value2' }, object2: { key3: 'value3', key4: 'value4' } }
+
+const object4=Object.assign({},object1,object2);
+console.log(object4); // Will print { key1: 'value1', key2:
+
+const object5=Object.assign(object1,object2);
+console.log(object5); // Will print { key1: 'value1', key2: 'value2', key3: 'value3', key4: 'value4' }
+
+const object6={...object1,...object2};
+console.log(object6); // Will print { key1: 'value1', key2:
+const users=[
+    {id:1,name:"krishna",email:"krishna@gmail.com"},
+    {id:2,name:"raj",email:"raj@gmail.com"},
+]
+
+console.log(users[1].email)
+
+
+console.log(tinderuser);
+
+console.log(Object.keys(tinderuser));
+console.log("-----",object1["key2"]); 
+
+console.log(Object.values(tinderuser)); 
+
+console.log(Object.entries(tinderuser)); // Will print an array of key-value pairs
+
+console.log(tinderuser.hasOwnProperty("isLoggedIn")); // Will print true if the property exists, false otherwise
+console.log(tinderuser.hasOwnProperty("username")); // Will print false if the property does not exist
+
