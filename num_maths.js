@@ -71,3 +71,4 @@ console.log(Math.floor(Math.random() * (max - min + 1)) + min);// Random number 
 console.log(Math.sqrt(16)); // Square root
 
 console.log(Math.pow(2, 3)); // Power (2^3)
+
