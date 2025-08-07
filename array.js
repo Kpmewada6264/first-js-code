@@ -62,3 +62,43 @@ console.log("C " ,myarr);
 console.log(myn2);      
 
 
+//Array Part 2
+
+const marblehero=["spiderman", "thor", "hulk", "ironman"];
+const dchero=["batman", "superman", "flash", "aquaman"];
+
+marblehero.push(dchero); // adds the entire array as a single element
+console.log(marblehero); 
+
+console.log(marblehero.length);
+
+console.log(marblehero[4][2]); // access an element in the nested array
+
+
+const allheros= marblehero.concat(dchero); // adds the entire array as a single element
+console.log(allheros);
+
+
+console.log("--------------------------");
+
+const allheros2= [...marblehero, ...dchero]; // spreads the elements of both arrays
+console.log(allheros2);
+
+console.log("---------------------------");
+const anotherarr=[1,2,3,[4,[5,6],[7,8],9],10];
+const flatarr=anotherarr.flat(4); // flattens the array to a depth of 4
+console.log(flatarr);
+
+console.log("---------------------------");
+console.log(Array.isArray("karthik")); // checks if the value is an array
+console.log(Array.from("krishna")); // creates a new array from an array-like or iterable object
+console.log("----------------------------");
+console.log(Array.from({name: "krishna"})); // 
+
+let score=100
+let score2=200
+let score3=300
+let score4=400
+console.log(Array.of(score, score2, score3, score4)); // creates a new array with a variable number of arguments
+
+
